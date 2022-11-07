@@ -1,84 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Scrolling Nav - Start Bootstrap Template</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-            <div class="container px-4">
-                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+<head>
+    <meta charset="utf-8" />
+    <title>JeongHan's Blog</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>JeongHanLim</h1>
+        <p> collection of Knowledge I have learned.</p>
+    </div>
+</header>
+<!-- About section-->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <h2>About Me</h2>
+            <p> I'm Junior Developer who is interested in Infrastructure System Engineer
+                at self-driving, web/app, platform or pipeline</p>
+            <ul>
+                <li>President of SCAR, Autonomous Driving Study in Software Department, Syunkyunkwan Univ. </li>
+                <li>Will Graduate on Feb, 2023</li>
+                <li>My Hobby is doing anything...including work!</li>
+                <h3></h3>
+                Contact me by jhlim271@naver.com
+                <h3></h3>
+                <button type="submit" class="btn btn-primary"><span class="bi-search"></span> Contact Me!</button>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- project section-->
+<section id="project">
+    <div class="container">
+        <div class="row">
+            <h2>Projects</h2>
+            <div>
+                <img width="80%" src="assets/MySpec2.png" alt="">
+                <table border-spacing="30px", width="100%", >
+                    <tr>
+                        <th>Project Title</th>
+                        <th>Period</th>
+                        <th>Role</th>
+                        <th>Framework</th>
+                        <th>Link</th>
+                    </tr>
+                    <tr>
+                        <td>SCAR - Self Driving Car Study</td>
+                        <td>18.01 ~ Now</td>
+                        <td>Now Mentor</td>
+                        <td></td>
+                        <td>Coming Soon!</td>
+                    </tr>
+                    <tr>
+                        <td>Self Driving Contest -PAMS2018</td>
+                        <td>18.09 ~ 18.11</td>
+                        <td>Team Member</td>
+                        <td>Python </td>
+                        <td><a href="https://github.com/HongBeenKim/pams-skku"> Project Link</a> </td>
+                    </tr>
+                    <tr>
+                        <td>KookMinUniv Self Driving Contest</td>
+                        <td>20.05 ~ 22.09</td>
+                        <td>Team Member</td>
+                        <td>ROS Python, OpenCV</td>
+                        <td>Private </td>
+                    </tr>
+                    <tr>
+                        <td>DrivePX2 Utilization by TensorRT</td>
+                        <td>20.12 ~ 21.01</td>
+                        <td>Team Member</td>
+                        <td>ONNX, TensorRT, Jetpack</td>
+                        <td> - </td>
+                    </tr>
+                    <tr>
+                        <td>Object Detection - VisDrone</td>
+                        <td>20.11 ~ 20.12</td>
+                        <td>Assistant Researcher</td>
+                        <td>Pytorch, YoloV4,5</td>
+                        <td><a href="https://github.com/lim-it-ing/YoloV5_Visdrone"> Project Link</a> </td>
+                    </tr>
+                    <tr>
+                        <td>Under Construction</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>Lane Changing Policy by RL</td>
+                        <td>22.08 ~ 22.10</td>
+                        <td>Solo Develop</td>
+                        <td>Stable Baselines</td>
+                        <td><a href="https://github.com/lim-it-ing/lane_change_sumo"> Project Link</a> </td>
+                    </tr>
+                </table>
+
+                <!--                        <p class="lead"> Text2</p>-->
             </div>
-        </nav>
-        <!-- Header-->
-        <header class="bg-primary bg-gradient text-white">
-            <div class="container px-4 text-center">
-                <h1 class="fw-bolder">Welcome to Scrolling Nav</h1>
-                <p class="lead">A functional Bootstrap 5 boilerplate for one page scrolling websites</p>
-                <a class="btn btn-lg btn-light" href="#about">Start scrolling!</a>
+
+        </div>
+    </div>
+</section>
+<section style="margin-top:50px;">
+    <div class="container">
+        <div class="row">
+            <h1 style="text-align:left;">What Am I Participating!</h1>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Learning Node with BootStrap
+                </label>
             </div>
-        </header>
-        <!-- About section-->
-        <section id="about">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>About this page</h2>
-                        <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
-                        <ul>
-                            <li>Clickable nav links that smooth scroll to page sections</li>
-                            <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-                            <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-                            <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Learning Java Backend, including Spring
+                </label>
             </div>
-        </section>
-        <!-- Services section-->
-        <section class="bg-light" id="services">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>Services we offer</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
-                    </div>
-                </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Using ROS/Pytorch for interesting tasks.
+                </label>
             </div>
-        </section>
-        <!-- Contact section-->
-        <section id="contact">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>Contact us</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+        </div>
+
+    </div>
+
+</section>
+<section>
+    <div class="d-flex align-items-center mb-2 mt-2">
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter more task...">
+        <button type="button" class="btn btn-primary ms-1 text-nowrap"><i class="bi bi-plus"></i>Add
+        </button>
+    </div>
+</section>
+<footer>
+    Ask Me by Email!
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+</body>
 </html>
