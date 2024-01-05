@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coding Test Articles</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Additional head elements -->
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">Coding Test Articles</h1>
+        <div id="posts-wrapper" class="posts-container">
+            <!-- Initially loaded posts or an introductory message -->
+        </div>
+    </div>
+
+    <!-- Link to the InfiniteScroll JavaScript file or include it inline -->
+    <script src="/js/scroll.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const infiniteScroll = new InfiniteScroll('/assets/board/codingtest/', '#posts-wrapper');
+        });
+    </script>
+</body>
+</html>
