@@ -161,17 +161,6 @@ body > .container {
   padding-top: 15px;
 }
 
-.title-button {
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
-  padding: 10px;
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
 
 .title-button:hover {
   background-color: #eaeaea;
@@ -193,4 +182,34 @@ body > .container {
 .title-button span {
   font-size: 16px;
   color: #333;
+  display: flex;
+  justify-content: space-between; /* Adjusts content to each end */
+  align-items: center;
+}
+.title-text {
+  font-size: 16px;
+  color: #333;
+  margin-right: 10px; /* Spacing between title and date */
+  margin-bottom: 5px; /* Adds space between title and date */
+
+
+}
+
+.date-text {
+  font-size: 14px;
+  color: #666; /* Slightly muted color for the date */
+  margin-left: auto; /* Pushes the date to the right */
+
+
+}
+.title-button {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f8f8f8; /* Example background color */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
 }

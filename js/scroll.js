@@ -33,34 +33,51 @@ class InfiniteScroll {
     processContent(htmlText) {
         const parser = new DOMParser();
         const doc = parser.parseFromString(htmlText, "text/html");
-
         const titleText = doc.title || `Article ${this.pNum}`;
-        this.createTitleButton(titleText, doc.body.innerHTML);
+        const dateMeta = doc.querySelector('meta[name="date"]');
+        const dateText = dateMeta ? dateMeta.content : 'Unknown Date';
+        this.createTitleButton(titleText,dateText, doc.body.innerHTML);
     }
 
-    createTitleButton(title, contentHTML) {
+    createTitleButton(title, date, contentHTML) {
         const titleButton = document.createElement('div');
         titleButton.classList.add('title-button');
-
+    
         const numberCircle = document.createElement('div');
         numberCircle.classList.add('number-circle');
         numberCircle.textContent = this.pNum;
         titleButton.appendChild(numberCircle);
-
+    
+        // Div for the title
+        const titleDiv = document.createElement('div');
+        titleDiv.classList.add('title-text');
+        
         const titleSpan = document.createElement('span');
         titleSpan.textContent = title;
-        titleButton.appendChild(titleSpan);
-
+        titleDiv.appendChild(titleSpan);
+    
+        // Div for the date
+        const dateDiv = document.createElement('div');
+        dateDiv.classList.add('date-text');
+    
+        const dateSpan = document.createElement('span');
+        dateSpan.textContent = date;
+        dateDiv.appendChild(dateSpan);
+    
+        titleButton.appendChild(titleDiv);
+        titleButton.appendChild(dateDiv);
+    
         const contentDiv = document.createElement('div');
         contentDiv.innerHTML = contentHTML;
         contentDiv.style.display = 'none';
-
+    
         titleButton.addEventListener('click', () => {
             const isDisplayed = contentDiv.style.display !== 'none';
             contentDiv.style.display = isDisplayed ? 'none' : '';
         });
-
+    
         this.wNode.appendChild(titleButton);
         this.wNode.appendChild(contentDiv);
     }
+    
 }
